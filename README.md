@@ -3,9 +3,10 @@ Code for "Gene-Gene Interaction Detection with Deep Learning"
 
 ---
 #### Toy example on simulated data:
-1. Run "run_interaction.py" to estimate pairwise interaction scores between genes on the original dataset. Results are saved in "/InteractionScore".
-2. Run "run_permutation.py" to estimate interaction scores between genes on 'num_run' (defined in the file) permutation dataset. Results are saved in "/PermutationDistribution". 
-3. Repeat Step 2 multiple times (in parallel) to obtain a permutation distribution.
+1. Run "run_interaction.py" to estimate pairwise interaction scores between genes on the original dataset. Results are saved in "InteractionScore/NN_i.csv".
+2. Run "run_permutation.py" to estimate interaction scores between genes on 'num_run' (defined in the file) permutation dataset. Results are saved in "PermutationDistribution/NN_i.csv". 
+
+We suggest to run step 2 in parallel.
 
 ---
 #### Use your own data:
