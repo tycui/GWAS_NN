@@ -103,7 +103,7 @@ def splite_data(combined_gene, gene_size):
 def PTVE_test(model, x, y):
     model.eval()
     y_pred, _ = model(x)
-    print('Explained variance of 65 genes is: %.5f.' % (1. - torch.sum((y - y_pred).var(dim = 0)) / torch.sum(y.var(dim = 0))))
+    print('Explained variance of all genes is: %.5f.' % (1. - torch.sum((y - y_pred).var(dim = 0)) / torch.sum(y.var(dim = 0))))
     return (1. - (y - y_pred).var(dim = 0) / y.var(dim = 0))
 
 
